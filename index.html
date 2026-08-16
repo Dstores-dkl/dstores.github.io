@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D.store's | E-books</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #171827;
+}
+
+header {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 15px #0001;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #5b5ce2;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 75px 7%;
+  text-align: center;
+  background: linear-gradient(135deg, #eeeaff, white);
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin: 15px 0;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #626878;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #5b5ce2;
+  color: white;
+  padding: 15px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 7%;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px #0001;
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.product {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #0001;
+}
+
+.cover {
+  height: 190px;
+  background: linear-gradient(135deg, #5b5ce2, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+}
+
+.content {
+  padding: 22px;
+}
+
+.content p {
+  color: #697080;
+  line-height: 1.5;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 18px;
+}
+
+.about {
+  background: #171827;
+  color: white;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  color: #d5d7e1;
+}
+
+footer {
+  background: #10121d;
+  color: #aaa;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">D<span>.store's</span></div>
+
+  <nav>
+    <a href="#produtos">E-books</a>
+    <a href="#categorias">Categorias</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div style="font-size:55
