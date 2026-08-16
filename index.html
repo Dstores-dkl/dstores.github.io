@@ -3,184 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D.store's | E-books</title>
+<title>D.store | E-books</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f7f7fb;
+  color:#171827
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7fb;
-  color: #171827;
+header{
+  background:#fff;
+  padding:18px 7%;
+  display:flex;
+  align-items:center;
+  box-shadow:0 2px 15px #0001
 }
 
-header {
-  background: white;
-  padding: 18px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 15px #0001;
+.logo{
+  font-size:27px;
+  font-weight:900;
+  color:#171827;
+  text-decoration:none
 }
 
-.logo {
-  font-size: 27px;
-  font-weight: 900;
+.logo span{color:#5b5bd6}
+
+.hero{
+  text-align:center;
+  padding:70px 20px;
+  background:linear-gradient(135deg,#eeeaff,#fff)
 }
 
-.logo span {
-  color: #5b5ce2;
+.hero h1{
+  margin:0 0 15px;
+  font-size:clamp(32px,7vw,52px)
 }
 
-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
+.hero p{
+  max-width:650px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.6;
+  color:#555
 }
 
-.hero {
-  padding: 75px 7%;
-  text-align: center;
-  background: linear-gradient(135deg, #eeeaff, white);
+.container{
+  width:min(1100px,92%);
+  margin:45px auto
 }
 
-.hero h1 {
-  font-size: 52px;
-  margin: 15px 0;
+.section-title{
+  text-align:center;
+  margin-bottom:30px
 }
 
-.hero p {
-  max-width: 650px;
-  margin: auto;
-  color: #626878;
-  font-size: 19px;
-  line-height: 1.6;
+.section-title h2{
+  font-size:30px;
+  margin-bottom:8px
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  background: #5b5ce2;
-  color: white;
-  padding: 15px 24px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
+.section-title p{color:#666}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px
 }
 
-section {
-  padding: 55px 7%;
+.card{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 5px 20px #00000012
 }
 
-.title {
-  text-align: center;
-  font-size: 34px;
-  margin-bottom: 30px;
+.cover{
+  height:190px;
+  border-radius:13px;
+  background:linear-gradient(135deg,#5b5bd6,#8b7cff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:18px
 }
 
-.categories {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+.card h3{margin:0 0 8px}
+
+.card p{
+  color:#666;
+  line-height:1.5
 }
 
-.category {
-  background: white;
-  padding: 13px 20px;
-  border-radius: 30px;
-  box-shadow: 0 4px 15px #0001;
-  font-weight: bold;
+.price{
+  font-size:22px;
+  font-weight:bold;
+  margin:15px 0
 }
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+.button{
+  display:block;
+  width:100%;
+  padding:13px;
+  border:0;
+  border-radius:10px;
+  background:#5b5bd6;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  font-weight:bold
 }
 
-.product {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px #0001;
+footer{
+  margin-top:60px;
+  padding:30px 20px;
+  text-align:center;
+  background:#171827;
+  color:#fff
 }
 
-.cover {
-  height: 190px;
-  background: linear-gradient(135deg, #5b5ce2, #8b5cf6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 65px;
-}
-
-.content {
-  padding: 22px;
-}
-
-.content p {
-  color: #697080;
-  line-height: 1.5;
-}
-
-.price {
-  font-size: 25px;
-  font-weight: 900;
-  margin-top: 18px;
-}
-
-.about {
-  background: #171827;
-  color: white;
-  text-align: center;
-}
-
-.about p {
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
-  color: #d5d7e1;
-}
-
-footer {
-  background: #10121d;
-  color: #aaa;
-  text-align: center;
-  padding: 25px;
-}
-
-@media (max-width: 800px) {
-  nav {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
-  }
-}
+footer p{color:#ccc}
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">D<span>.store's</span></div>
-
-  <nav>
-    <a href="#produtos">E-books</a>
-    <a href="#categorias">Categorias</a>
-    <a href="#sobre">Sobre</a>
-  </nav>
+  <a class="logo" href="#">D.<span>store's</span></a>
 </header>
 
 <section class="hero">
-  <div style="font-size:55
+  <h1>Bem-vindo à D.store</h1>
+  <p>
+    Encontre e-books para aprender, evoluir e descobrir novos conhecimentos.
+    Escolha seu próximo livro digital.
+  </p>
+</section>
+
+<main class="container">
+
+<div class="section-title">
+  <h2>Nossos E-books</h2>
+  <p>Confira alguns dos nossos conteúdos digitais.</p>
+</div>
+
+<div class="products">
+
+<article class="card">
+  <div class="cover">E-BOOK<br>APRENDIZADO</div>
+  <h3>Aprenda Mais</h3>
+  <p>Conteúdo digital para ajudar você a desenvolver novos conhecimentos.</p>
+  <div class="price">R$ 9,90</div>
+  <a class="button" href="#">Comprar</a>
+</article>
+
+<article class="card">
+  <div class="cover">E-BOOK<br>DESENVOLVIMENTO</div>
+  <h3>Desenvolva-se</h3>
+  <p>Material para quem quer aprender e melhorar todos os dias.</p>
+  <div class="price">R$ 12,90</div>
+  <a class="button" href="#">Comprar</a>
+</article>
+
+<article class="card">
+  <div class="cover">E-BOOK<br>GUIA</div>
+  <h3>Guia Completo</h3>
+  <p>Um guia digital simples e direto para começar sua jornada.</p>
+  <div class="price">R$ 14,90</div>
+  <a class="button" href="#">Comprar</a>
+</article>
+
+</div>
+</main>
+
+<footer>
+  <strong>D.store's</strong>
+  <p>© 2026 D.store's — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
